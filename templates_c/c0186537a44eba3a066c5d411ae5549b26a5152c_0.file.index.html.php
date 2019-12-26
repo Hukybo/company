@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2019-12-25 16:01:12
+/* Smarty version 3.1.34-dev-7, created on 2019-12-26 17:46:38
   from 'D:\OfficeAndMac\myphp\company\templates\admin\index.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5e031748087265_39758622',
+  'unifunc' => 'content_5e04817ebf2355_21046849',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c0186537a44eba3a066c5d411ae5549b26a5152c' => 
     array (
       0 => 'D:\\OfficeAndMac\\myphp\\company\\templates\\admin\\index.html',
-      1 => 1577260845,
+      1 => 1577353594,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e031748087265_39758622 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e04817ebf2355_21046849 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE HTML>
 <html>
 <head>
@@ -59,32 +59,33 @@ lib/DD_belatedPNG_0.0.8a-min.js" ><?php echo '</script'; ?>
     <title>后台登录 - H-ui.admin v3.1</title>
 </head>
 <body>
-<input type="hidden" id="TenantId" name="TenantId" value="" />
 <div class="header"></div>
 <div class="loginWraper">
     <div id="loginform" class="loginBox">
-        <form class="form form-horizontal" action="index.html" method="post">
+        <form class="form form-horizontal" action="index.php?m=admin&c=login" method="post">
             <div class="row cl">
                 <label class="form-label col-xs-3"><i class="Hui-iconfont">&#xe60d;</i></label>
                 <div class="formControls col-xs-8">
-                    <input id="" name="" type="text" placeholder="账户" class="input-text size-L">
+                    <input id="" name="username" type="text" placeholder="账户" class="input-text size-L">
                 </div>
             </div>
             <div class="row cl">
                 <label class="form-label col-xs-3"><i class="Hui-iconfont">&#xe60e;</i></label>
                 <div class="formControls col-xs-8">
-                    <input id="" name="" type="password" placeholder="密码" class="input-text size-L">
+                    <input id="" name="password" type="password" placeholder="密码" class="input-text size-L">
                 </div>
             </div>
             <div class="row cl">
                 <div class="formControls col-xs-8 col-xs-offset-3">
-                    <input class="input-text size-L" type="text" placeholder="验证码" onblur="if(this.value==''){this.value='验证码:'}" onclick="if(this.value=='验证码:'){this.value='';}" value="验证码:" style="width:150px;">
-                    <img src=""> <a id="kanbuq" href="javascript:;">看不清，换一张</a> </div>
+                    <input class="input-text size-L" name = "code" type="text" placeholder="验证码" value="" style="width:150px;">
+<!--                    <img src="/?m=admin&c=verify" id="verify"> <a id="kanbuq" href="javascript:;">看不清，换一张</a> </div>-->
+                    <a class="kanbuq" href="javascript:;"><img src="/?m=admin&c=verify" id="verify"></a>
+                    <a class="kanbuq" href="javascript:;">看不清，换一张</a> </div>
             </div>
             <div class="row cl">
                 <div class="formControls col-xs-8 col-xs-offset-3">
                     <label for="online">
-                        <input type="checkbox" name="online" id="online" value="">
+                        <input type="checkbox" name="online" id="online" value="1">
                         使我保持登录状态</label>
                 </div>
             </div>
@@ -105,6 +106,18 @@ lib/jquery/1.9.1/jquery.min.js"><?php echo '</script'; ?>
 <?php echo '<script'; ?>
  type="text/javascript" src="<?php echo __STATIC__;?>
 static/h-ui/js/H-ui.min.js"><?php echo '</script'; ?>
+>
+<!--更换验证码-->
+<?php echo '<script'; ?>
+ type="text/javascript">
+    $(function () {
+        // 给点击事件一个函数
+        $('.kanbuq').click(function () {
+            // 更换src的路径，加一个随机数是为了兼容IE浏览器
+            $('#verify').attr('src', $('#verify').attr('src') + '&' + Math.random())
+        })
+    })
+<?php echo '</script'; ?>
 >
 </body>
 </html><?php }

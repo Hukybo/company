@@ -2,6 +2,9 @@
     /*
      * 项目入口
      */
+    session_start();  // 建立浏览器与服务器连接
+    error_reporting(E_ALL ^ E_NOTICE);
+
     if (isset($_GET['m'])) {
         $m = $_GET['m'];
     } else {
@@ -16,7 +19,7 @@
 
     // 产生一个凭证，使用常量（定义之后不能修改）
     define('TICKET', 1);
-
+    require_once('includes/function.php');
     require_once('smarty/Smarty.class.php');
     $smarty = new Smarty;
 
@@ -31,4 +34,6 @@
     } else {
         header('location:404.html');
     }
+
+
 ?>
