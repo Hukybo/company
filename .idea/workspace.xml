@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="adf6f2c8-c337-4188-a6e8-23f77de9d242" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/fonts/msyh.ttc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/function.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/verify.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates_c/103ad9024129bd49a012a6ee332d98102951e0c3_0.file.news.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates_c/103ad9024129bd49a012a6ee332d98102951e0c3_0.file.news.html.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates_c/c0186537a44eba3a066c5d411ae5549b26a5152c_0.file.index.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates_c/c0186537a44eba3a066c5d411ae5549b26a5152c_0.file.index.html.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +56,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/software/wamp64/bin/php/php7.4.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -105,7 +96,9 @@
       <workItem from="1577091972073" duration="1585000" />
       <workItem from="1577255962447" duration="16904000" />
       <workItem from="1577348643765" duration="3864000" />
-      <workItem from="1577353342932" duration="1276000" />
+      <workItem from="1577353342932" duration="1331000" />
+      <workItem from="1577517047481" duration="21000" />
+      <workItem from="1578295242421" duration="290000" />
     </task>
     <task id="LOCAL-00001" summary="测试">
       <created>1577093579912</created>
@@ -128,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577269787704</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="2019-12-26更新">
+      <created>1577354994149</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1577354994150</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,7 +137,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="测试" />
     <MESSAGE value="2019-12-25更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="2019-12-25更新" />
+    <MESSAGE value="2019-12-26更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="2019-12-26更新" />
   </component>
   <component name="WindowStateProjectService">
     <state x="540" y="175" key="#CLI_Interpreters" timestamp="1577256134240">
@@ -148,14 +149,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="642" y="108" key="#PHP/0.0.1920.1040@0.0.1920.1040" timestamp="1577256135996" />
-    <state x="10" y="81" key="CommitChangelistDialog2" timestamp="1577269776605">
+    <state x="10" y="81" key="CommitChangelistDialog2" timestamp="1577354992916">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="10" y="81" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1577269776605" />
-    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1577340979189">
+    <state x="10" y="81" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1577354992916" />
+    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1578295284233">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1577340979189" />
+    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1578295284233" />
     <state x="208" y="368" width="273" height="219" key="Github.ShareDialog" timestamp="1577093062797">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -172,9 +173,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1577341166537" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1577269830175">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1577355001584">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1577269830175" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1577355001584" />
   </component>
 </project>
