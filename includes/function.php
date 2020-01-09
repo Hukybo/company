@@ -35,4 +35,10 @@
         imagedestroy($im);  // 销毁图像
         echo $code;
     }
+
+    function dump($data) {
+        echo '<pre>';
+        print_r($data);
+        echo '</pre>';
+    }
 ?>

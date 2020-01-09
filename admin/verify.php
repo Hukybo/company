@@ -1,3 +1,3 @@
 <?php
-    verify();
+    verify(['noise'=>false]);
 ?>

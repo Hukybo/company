@@ -21,5 +21,11 @@
     } else {
         show_message('用户名不存在或密码错误', 'index.php?m=admin&c=index');
     }
+    $_SESSION['admin'] = $row;
+    // 修改登录时间、次数、ip
+    $login_time = date('Y-m-d H:i:s');
+    $login_ip = $_SERVER['REMOTE_ADDR'];  // 获取客户端ip
+    $sql = "update user set login_time='$login_time', login_num=login_num+1, login_ip='$login_ip' where id={$row['id']}";
+    increase_delete_modify($sql);
     header('location:index.php?m=admin&c=main');
 ?>

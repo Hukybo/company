@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-01-08 16:34:26
+/* Smarty version 3.1.34-dev-7, created on 2020-01-09 15:27:47
   from 'D:\OfficeAndMac\myphp\company\templates\admin\welcome.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5e1594128c83e4_44582440',
+  'unifunc' => 'content_5e16d5f36f1a73_04218084',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'fd865b8aff17186934705eb15d019537af63be81' => 
     array (
       0 => 'D:\\OfficeAndMac\\myphp\\company\\templates\\admin\\welcome.html',
-      1 => 1578472130,
+      1 => 1578554165,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e1594128c83e4_44582440 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e16d5f36f1a73_04218084 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE HTML>
 <html>
 <head>
@@ -62,9 +62,16 @@ lib/DD_belatedPNG_0.0.8a-min.js" ><?php echo '</script'; ?>
 </head>
 <body>
 <div class="page-container">
-	<p class="f-20 text-success">欢迎使用H-ui.admin <span class="f-14">v3.1</span>后台模版！</p>
-	<p>登录次数：18 </p>
-	<p>上次登录IP：222.35.131.79.1  上次登录时间：2014-6-14 11:19:55</p>
+	<p class="f-20 text-success">欢迎使用Tencent 腾讯管理系统</p>
+	<p>登录次数：<?php echo $_SESSION['admin']['login_num']+1;?>
+ </p>
+	<?php if ($_SESSION['admin']['login_time'] > 0) {?>
+	<p>上次登录IP：<?php echo $_SESSION['admin']['login_ip'];?>
+  上次登录时间：<?php echo $_SESSION['admin']['login_time'];?>
+</p>
+	<?php } else { ?>
+	<p>第一次登录</p>
+	<?php }?>
 	<table class="table table-border table-bordered table-bg">
 		<thead>
 			<tr>
