@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-01-09 17:45:03
+/* Smarty version 3.1.34-dev-7, created on 2020-01-10 10:04:31
   from 'D:\OfficeAndMac\myphp\company\templates\admin\header.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5e16f61f48bef0_27424011',
+  'unifunc' => 'content_5e17dbaf404543_88375516',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '49e92eafb7a2f4116647eb43c418be79ab57e283' => 
     array (
       0 => 'D:\\OfficeAndMac\\myphp\\company\\templates\\admin\\header.html',
-      1 => 1578563099,
+      1 => 1578621861,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e16f61f48bef0_27424011 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e17dbaf404543_88375516 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE HTML>
 <html>
 <head>
@@ -105,5 +105,18 @@ lib/My97DatePicker/4.8/WdatePicker.js"><?php echo '</script'; ?>
     }
 <?php echo '</script'; ?>
 >
+
+<?php echo '<script'; ?>
+ type="text/javascript" src="<?php echo @constant('__STATIC__');?>
+lib/jquery.validation/1.14.0/jquery.validate.js"><?php echo '</script'; ?>
+> 
+<?php echo '<script'; ?>
+ type="text/javascript" src="<?php echo @constant('__STATIC__');?>
+lib/jquery.validation/1.14.0/validate-methods.js"><?php echo '</script'; ?>
+> 
+<?php echo '<script'; ?>
+ type="text/javascript" src="<?php echo @constant('__STATIC__');?>
+lib/jquery.validation/1.14.0/messages_zh.js"><?php echo '</script'; ?>
+> 
 <?php }
 }
