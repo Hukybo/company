@@ -24,6 +24,8 @@ if (!empty($_POST)) {
     $id = $_GET['id'];
     if ($id > 0) {
         $row = get_row_data("select * from news_category where id=$id limit 1");
+    } else {
+        $row = ['is_show' => 1, 'sort' => 0];
     }
     $smarty->assign('row', $row);
     $smarty->display($tpl_name);
