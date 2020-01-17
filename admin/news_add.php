@@ -5,8 +5,20 @@ use function PHPSTORM_META\type;
 require_once('init.php');
 if (!empty($_POST)) {
     $data = $_POST;
-    print_r(array_keys($data));
-    $sql = "insert into news (" . implode(',', array_keys($data)) . ")";
+    $data['publish_time'] = strtotime($data['publish_time']);
+    unset($data['file']);
+    if ($data['id'] > 0) {
+        $sql = "insert into news (" . implode(',', array_keys($data)) . ") values ('" . implode("','", array_values($data)) . "')";
+    } else {
+        unset($data['id']);
+        $sql = "insert into news (" . implode(',', array_keys($data)) . ") values ('" . implode("','", array_values($data)) . "')";
+    }
+    $ret = increase_delete_modify($sql);
+    if ($ret !== false) {
+        echo 1;
+    } else {
+        echo 0;
+    }
 } else {
     $id = $_GET['id'];
     if ($id > 0) {
@@ -16,5 +28,6 @@ if (!empty($_POST)) {
     }
     $category = get_all_data("select id,name from news_category order by sort,id desc");
     $smarty->assign('row', $row);
+    $smarty->assign('category', $category);
     $smarty->display($tpl_name);
 }

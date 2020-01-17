@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-01-15 18:08:33
+/* Smarty version 3.1.34-dev-7, created on 2020-01-17 15:54:02
   from 'D:\OfficeAndMac\myphp\company\templates\admin\news_add.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5e1ee4a1482fb2_59155592',
+  'unifunc' => 'content_5e21681a5c35b3_19398135',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b6d4263c3801d57153eaf7ee4ef361b2ea730698' => 
     array (
       0 => 'D:\\OfficeAndMac\\myphp\\company\\templates\\admin\\news_add.html',
-      1 => 1579082228,
+      1 => 1579247630,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:header.html' => 1,
   ),
 ),false)) {
-function content_5e1ee4a1482fb2_59155592 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e21681a5c35b3_19398135 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
@@ -35,9 +35,11 @@ $_smarty_tpl->_subTemplateRender("file:header.html", $_smarty_tpl->cache_id, $_s
 " name="title">
                     </div>
                 </div>
+
                 <div class="row cl">
                     <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>分类：</label>
-                    <div class="formControls col-xs-8 col-sm-9"> <span class="select-box">
+                    <div class="formControls col-xs-8 col-sm-9">
+                        <span class="select-box">
                             <select name="cat_id" class="select">
                                 <option value="">==请选择分类==</option>
                                 <?php
